@@ -1,0 +1,147 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #e9eff1; /* Light gray background */
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center text only in the header */
+}
+
+.login, .chat-container {
+  padding: 20px;
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  background-color: #0078ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.login button:hover {
+  background-color: #005bb5;
+}
+
+.chat-container {
+  display: none;
+}
+
+.chat-header {
+  background-color: #0078ff; /* Messenger blue */
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.chat-box {
+  max-height: 400px; /* Set max height for chat box */
+  overflow-y: auto; /* Enable scrolling for long chat */
+  border: none; /* Remove border for a cleaner look */
+  padding: 10px; /* Padding inside chat box */
+  margin-bottom: 10px; /* Space below chat box */
+  background-color: #f9f9f9; /* Light background for chat box */
+}
+
+.message {
+  max-width: 75%; /* Adjust as necessary */
+  word-wrap: break-word; /* Break long words */
+  margin: 5px; /* Space between messages */
+  padding: 10px; /* Padding around message */
+  border-radius: 10px; /* Rounded corners */
+  position: relative; /* For pseudo-elements */
+}
+
+.sent {
+  background-color: #0078ff; /* Messenger blue for sent messages */
+  color: white; /* White text for contrast */
+  margin-left: auto; /* Align sent messages to the right */
+  text-align: right; /* Align text of sent messages to the right */
+}
+
+.received {
+  background-color: #e4e6eb; /* Light gray for received messages */
+  color: black; /* Black text for contrast */
+  margin-right: auto; /* Align received messages to the left */
+  text-align: left; /* Align text of received messages to the left */
+}
+
+.timestamp {
+  display: block; /* Show timestamp on a new line */
+  font-size: 0.75em; /* Smaller text for the timestamp */
+  color: rgba(0, 0, 0, 0.705); /* Gray color for timestamp */
+  text-align: right; /* Align timestamp to the right */
+}
+
+.login-message {
+    margin-top: 15px; /* Space above the login message */
+    padding: 10px; /* Padding around the message */
+    background-color: #e7f3fe; /* Light blue background */
+    border: 1px solid #0078ff; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    color: #0078ff; /* Blue text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+}
+
+input[type="text"] {
+  width: calc(100% - 80px); /* Adjust width to fit buttons */
+  padding: 10px; /* Padding */
+  border: 1px solid #ccc; /* Border for input field */
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 5px; /* Space before the button */
+}
+
+button {
+  padding: 10px; /* Padding */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor for buttons */
+}
+
+#sendBtn {
+  background-color: #0078ff; /* Messenger blue */
+  color: white; /* White text for contrast */
+}
+
+#sendBtn:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+}
+
+#clearBtn {
+  margin-top: 10px;
+  background-color: #ff4c4c; /* Red for clear button */
+  color: white; /* White text */
+}
+
+#clearBtn:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+.reply-container {
+  background-color: #f0f0f0; /* Light background for the reply context */
+  border: 1px solid #ccc; /* Border to distinguish it */
+  padding: 10px;
+  margin-bottom: 10px; /* Space below the reply context */
+}
